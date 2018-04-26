@@ -1,0 +1,16 @@
+I have used promise chain for this task.
+I tried to accomplish it with 1 api alone but was not able to do promise chain .
+So,this time I have done with promise chain where order of execution is maintained.
+
+Also,I have removed the global variables and removed http module,
+
+The following are implemented in main.js
+
+1. In a blog, get the author info of n'th post from the latest. (input: n)
+API : https://public-api.wordpress.com/rest/v1.1/sites/discover.wordpress.com/posts/
+
+2. Get the tags statistics of posts he has written. (Count the occurences of tags in his posts)
+API : https://public-api.wordpress.com/rest/v1.1/sites/discover.wordpress.com/posts/?author={ID}
+
+3. Get the latest post for the tag having maximum occurrence. (Return a post that is written by other author and not by the selected author)
+API : https://public-api.wordpress.com/rest/v1.1/sites/discover.wordpress.com/posts/?tag={tag_slug}
